@@ -1,0 +1,1039 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Patrick Hand SC', cursive;
+}
+header { background-color: #642B54;
+    width: auto;
+}
+header img {
+    width: 150px;
+    margin: 20px;
+    margin-left: 30px;
+}
+.search {
+	display: inline-flex;
+	align-items: center;
+	background-image: linear-gradient(45deg, #704564, #8E6D85);
+	color: #fff;
+	padding: 10px;
+	border-radius: 20px;
+    float:right
+}
+.search :is(input, button) {
+	background: transparent;
+	color: inherit;
+	border: none;
+	outline: none;
+}
+.search-input {
+	width: 0;
+	transition: width 0.5s;
+}
+.search-button {
+	display: grid;
+	place-items: center;
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	transition: color 0.25s;
+}
+.search-button:hover {
+	color: #e3e3e3;
+}
+.search:focus-within input {
+	width: 200px;
+}
+::placeholder {
+	font-family: 'Patrick Hand SC', cursive;
+	color: #e3e3e3;
+    font-size: 16px;
+}
+nav ol {
+    font-family:'Patrick Hand SC', cursive;
+    font-size: 25px;
+    background-color:#704564;
+    list-style:none;
+    padding: 0;
+    border-radius: 20px;
+    width:fit-content;
+    display: flex;
+    flex-direction: row;
+}
+nav li {
+        border-right: 1px solid #642B54;
+}
+li:last-child {
+    border-right: none;
+}
+nav li a {
+    text-decoration: none;
+    color:#fff;
+    display: inline-flex;
+    padding: 5px;
+    line-height: 40px;
+    text-align: center;
+    padding-right: 40px;
+    padding-left: 40px;
+
+}
+nav li a:hover{
+    background-color: #8E6D85;
+    border-radius: 20px;
+    
+}
+.hyn{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 25%);
+}
+.hyn nav{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.hyn header{
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
+
+.hyn header img{
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    background-image: url(../Assets/background.png);
+    background-size:cover;
+    width: auto;
+    padding-top: 5%;
+    margin-top: -48px;
+    margin-bottom: 0%;
+}
+
+.mindex{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+.slogan h1 {
+    font-family:'Patrick Hand SC', cursive;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin:20px 
+}
+.slogan a {
+    font-family:'Patrick Hand SC', cursive;
+    font-size: 30px;
+    background-color: #704564;
+    color: #fff;
+    width:fit-content;
+    border-radius: 10px;
+    margin-left: 300px;
+    text-decoration: none;
+}
+
+.main-fotos{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+    ". . . mf1"
+    ". . mf2 mf3"
+    ". mf4 mf5 mf6"
+    "mf7 mf8 mf9 mf10";
+    margin-left: -310px;
+    margin-top: -70px;
+}
+.main-fotos img {
+    margin: 10px;
+    gap: 5px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #642B54,
+    0 0 10px #642B54,
+    0 0 20px #642B54,
+    0 0 40px #704564,
+    0 0 80px #704564;
+
+
+}
+.mf1{
+    grid-area: mf1;
+}
+.mf2{
+    grid-area: mf2;
+}
+.mf3{
+    grid-area: mf3;
+}
+.mf4{
+    grid-area: mf4;
+}
+.mf5{
+    grid-area: mf5;
+}
+.mf6{
+    grid-area: mf6;
+}
+.mf7{
+    grid-area: mf7;
+}
+.mf8{
+    grid-area: mf8;
+}
+.mf9{
+    grid-area: mf9;
+}
+.mf10{
+    display: grid;
+    grid-area: mf10;
+}
+.banner {
+    background-color: #704564b2;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+    padding-top: 15px;
+    gap:5px;
+    margin-bottom: 28px;
+}
+.banner-item {
+    scroll-snap-align:center;
+    height: 200px;
+}
+.footer {
+    background-color: #A9ABAF;
+    font-family: 'Patrick Hand SC', cursive;
+    font-size: 16px;
+    width: 100%;
+    height: 120px;
+    margin-top: -28px;
+    padding-top: 20px;
+    display:grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-areas:
+    "f1 f2 f3"
+    ;
+}
+.f1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    grid-area: f1;
+    align-items: center;
+    justify-content: center;
+}
+.f2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-area: f2;
+}
+.f3 {
+    display: flex;
+    grid-area: f3;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+.abcd {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    gap: 10px;
+    font-size: 25px;
+}
+
+.productos{
+    display: grid;
+    grid-template-columns: 400px auto;
+    grid-template-rows: 100px auto;
+    margin: 20px;
+    margin-bottom: 30px;
+}
+.productos img {
+    border-radius: 20px;
+    display: grid;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: center;
+    align-self: center;
+}
+
+.productos h1 {
+    font-size: 35px;
+    padding: 10px 10px;
+    background-color: #704564b2;
+    width: fit-content;
+    height: fit-content;
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-self: center;
+    align-self : center;
+    margin: 20px;
+    margin-left: 0px;
+    border-radius: 20px;
+}
+.productos p{
+    font-size: 30px;
+    background-color: #704564b2;
+    width:fit-content;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: justify;
+    border-radius: 20px;
+    padding:5px;
+}
+
+.tragos{
+    margin: 20px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 400px auto;
+    grid-template-rows: 100px auto auto;
+}
+
+.tragos img{
+    border-radius: 20PX;
+    display: grid;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    justify-self: center;
+    align-self: center;
+}
+.tragos h1{
+    font-size: 35px;
+    padding: 10px 10px;
+    background-color: #704564b2;
+    width: fit-content;
+    height: fit-content;
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-self: center;
+    align-self : center;
+    margin: 20px;
+    margin-left: 0px;
+    border-radius: 20px;
+}
+.tragos p{
+    font-size: 30px;
+    background-color: #704564b2;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 20PX;
+    padding: 5px;
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    text-align: justify;
+}
+.tragos ul{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.tragos li{
+    font-size: 30px;
+    list-style:circle;
+    background-color: #704564b2;
+    width: auto;
+    height: fit-content;
+    border-radius: 20PX;
+    padding: 5px;
+    text-align: justify;
+}
+
+.form-contacto {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+.form-name {
+    width: 495px;
+    font-size: 20px;
+}
+.form-email {
+    width: 495px;
+    font-size: 20px;
+
+}
+.form-comentario {
+    width: 500px;
+    height: 500px;
+    border-color: #704564b2;
+    border-style: solid;
+    border-width: 20px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+.form-enviar{
+    margin-top: 10px;
+    width: 80px;
+    font-size: 20px;
+}
+::placeholder {
+    color: grey;
+}
+label {
+    background-color: #704564b2;
+    width: 500px;
+    font-size: 20px;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+.contactarnos {margin-top: 20px;
+    margin-bottom:30px;
+    margin-left: 20px;
+    background-color: #704564b2;
+    width: fit-content;
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    padding: 5px;
+}
+.contactarnos h1 {
+    font-size: 25px;
+}
+.contactarnos a {
+    font-size: 16px;
+    width: fit-content;
+}
+.descripcion {
+    font-size: 25px;
+    background-color: #704564b2;
+    margin: 20px;
+    width: fit-content;
+    border-radius: 20px;
+    padding-left: 5px;
+    text-align: justify;
+}
+.main-nosotros{
+    margin: 20xp;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 250px 230px;
+    grid-template-areas:
+    "mapa horario"
+    "mapa metodo";
+}
+.mapa iframe{
+    display: grid;
+    grid-area: mapa;
+}
+iframe{ 
+    width: 600px;
+    height: 450px;
+    border: 20px;
+    margin-left: 20px;
+}
+.mapa {
+    margin-left: 20xp;
+}
+.horarios-de-atencion{
+background-color: #704564b2;
+margin: 20px;
+border-radius: 20px;
+grid-area: horario;
+padding:5px;
+width: fit-content;
+height: fit-content;
+display: grid;
+justify-self: center;
+align-self: center;
+}
+.horarios-de-atencion h2{
+    font-size: 20px;
+    text-align: center;
+}
+.horarios-de-atencion li{
+    list-style: none;
+    width: fit-content;
+    font-size: 16px;
+    text-align: justify;
+}
+.metodos-de-pago {
+    background-color: #704564b2;
+    margin:20px;
+    width: fit-content;
+    border-radius: 20px;
+    grid-area: metodo;
+    padding: 5px;
+    width: fit-content;
+    height: fit-content;
+    justify-self: center;
+    align-self: center;
+}
+.metodos-de-pago h3{
+    font-size: 20px;
+    text-align: center;
+}
+.metodos-de-pago p{
+    font-size: 16px;
+    text-align: justify;
+}
+.recomendaciones {
+font-size: 20px;
+background-color: #704564b2;
+margin-bottom: 32px;
+width: fit-content;
+padding: 20px;
+border-radius: 20px;
+margin-left: 6%;
+}
+.recomendaciones p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.recomendaciones img{
+height: 120px;
+width: 300px;
+gap: auto;
+}
+
+@media (max-width:1024px) {
+        header img {
+            width: 100px;
+            margin-left: 15px;}
+        
+            nav ol {
+            font-size: 20px;}
+        
+            nav li a {
+            line-height: 20px;
+            padding-right: 20px;
+            padding-left: 20px;}
+        
+            
+            .slogan h1 {
+            margin-top: 50px;
+            font-size: 40px;}
+        
+            .slogan a {
+            font-size: 25px;
+            margin-left: 250px;}
+        
+            .main-fotos{
+                margin-top: 50px;
+                margin-left: -550px;}
+
+            .main-fotos img {
+            width: 150px;
+            margin: 10px;
+            gap: 5px;}
+        
+            .banner img{
+            width:150px}
+
+            .productos h1 {
+                font-size: 20px;}
+            
+            .productos p{
+                    font-size: 18px;}  
+            .tragos h1{
+                font-size: 20px;
+            }
+            .tragos p{
+                font-size: 18px;
+            }
+            .tragos li{
+                font-size: 18px;
+            }
+            iframe{
+                display: grid;
+                grid-area: mapa;
+                width: 600px;
+                height: 450px;
+                border: 20px;}
+            
+            .recomendaciones{
+                margin-left: 0;
+                padding-left: 60px;
+            }
+
+}
+
+@media (max-width:768px) {
+    .main-nosotros {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    iframe{
+        display: flex;
+        flex-direction: row;
+        margin-left: 10%;}
+
+        .recomendaciones{
+            margin-top: 5%;
+            padding-left: 80px;
+        }
+}
+
+@media (max-width: 425px) {
+
+    header img {
+        width: 90px;
+        margin-top: 5px;
+        margin-left: 15px;
+        margin-bottom: 0;}
+    
+        header {
+            height: fit-content;
+        }
+
+        nav ol {
+        font-size: 17px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: 5px;}
+    
+        nav li a {
+        line-height: 20px;
+        padding-right: 10px;
+        padding-left: 10px;}
+    
+        .hyn nav{
+            grid-row-start: 4;
+            grid-row-end: 5;
+            grid-column-start: 1;
+            grid-column-end: 5;
+            }
+            
+        .search {
+            padding: 5px;
+            border-radius: 10px;
+            margin-right: 8px}
+
+        .search-button {
+            width: 15px;
+            height: 15px;}
+
+        .mindex{
+            display:flex;}
+
+        .slogan h1 {
+        margin-top: 60px;
+        font-size: 30px;
+        text-align: center;}
+    
+        .slogan a {
+        font-size: 20px;
+        margin-left: 160px;
+        text-align: center;
+        align-content: center;}
+
+        .main-fotos img {
+        width: 90px;}
+    
+        .main-fotos{
+            width: auto;
+            margin-left: -300px;
+            margin-top: 180px;}
+
+        .mf1 {
+            display: none;
+        }
+
+        .mf6 {
+            display: none;
+        }
+
+        .mf3 {
+            display: none;
+        }
+
+        .mf10 {
+            display: none;
+        }
+
+        .banner img{
+        width: 90px}
+
+        .footer {
+            font-size: 17px;
+            height: fit-content;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            display:flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-content: center;}
+
+        .f1 a{
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .f2 a{
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .f3 a{
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        main {
+            margin-top: -10%;
+        }
+        .abcd {
+            font-size: 15px;
+            gap: 5px;
+            margin-top: 10%;
+        }
+
+        .productos{
+            display: grid;
+            grid-template-columns: 0px;
+            grid-template-rows: 80px auto auto;
+            margin: 10px;
+            margin-bottom: 20px;}
+
+        .productos img{
+            width: 200px;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            align-items: center;
+            margin: 5px;
+            margin-bottom: 10px;
+        }
+        .productos h1 {
+            font-size: 16px;}
+        
+        .productos p{
+                font-size: 15px;}  
+
+        .tragos{
+            display: grid;
+            grid-template-columns: 0px;
+            grid-template-rows: 80px auto auto auto;
+            margin: 10px;
+            margin-bottom: 20px;}
+
+        .tragos img{
+            width: 200px;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 4;
+            grid-row-end: 5;
+            align-items: center;
+            margin: 5px;
+            margin-bottom: 10px;
+        }
+        .tragos h1{
+            font-size: 16px;
+        }
+        .tragos p{
+            font-size: 15px;
+        }
+        .tragos li{
+            font-size: 15px;
+        }
+
+        .form-contacto {margin-top: 10%;}
+
+        .form-name {
+            width: 300px;
+            font-size: 15px;
+        }
+        .form-email {
+            width: 300px;
+            font-size: 15px;
+        
+        }
+        .form-comentario{
+            width: 400px;
+            height: 400px;
+            font-size: 15px;
+        }
+        .form-enviar{
+            margin-top: 10px;
+            width: 40px;
+            font-size: 15px;
+        }
+        label {
+            background-color: #704564b2;
+            width: 300px;
+            font-size: 15px;
+            padding-left: 20px;}
+
+            ::placeholder {
+            font-size: 15px;}
+
+        .contactarnos {
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        .contactarnos h2 {
+            font-size: 20px;
+        text-align: center;}
+
+        .descripcion{
+            font-size: 18px;
+            margin-top: 10%;
+            padding: 5px;
+        }
+        .main-nosotros {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+        }
+
+        iframe{
+            display: grid;
+            grid-area: mapa;
+            width: 300px;
+            height: 300px;
+            align-content: center;
+            border: 10px;
+            margin-left: 15%;}
+
+        .recomendaciones img {
+            width: 300px;
+        }
+
+        
+        .recomendaciones {
+            margin-top: 5%;
+            margin-bottom: 10%;
+            padding-left: 15%;
+        }
+}
+
+@media (max-width: 375px) {
+    header img {
+        width: 80px;}
+    
+        nav ol {
+        font-size: 15px;
+        margin-left: 2px;}
+
+        .main-fotos img {
+        width: 100px;}
+    
+        .main-fotos{
+            margin-left: -380px;}
+
+        .banner img{
+        width: 100px}
+
+        .footer {
+            font-size: 15px;}
+
+        .form-name {
+            width: 200px;
+        }
+        .form-email {
+            width: 200px;
+        
+        }
+        .form-comentario{
+            width: 300px;
+            height: 300px;
+        }
+
+        label {
+            background-color: #704564b2;
+            width: 200px;}
+
+
+        .contactarnos h2 {
+            font-size: 15px;}
+
+        .descripcion{
+            font-size: 15px;
+            padding: 5px;
+        }
+
+        .horarios-de-atencion h2{
+            font-size: 15px;
+        }
+        .horarios-de-atencion ol {
+            font-size: 14px;
+        }
+
+        .metodos-de-pago h3 {
+            font-size: 15px;
+        }
+
+        .metodos-de-pago p {
+            font-size: 14px;
+        }
+        iframe{
+            margin-left: 10%;}
+
+        .recomendaciones img {
+            width: 280px;
+        }
+
+        
+        .recomendaciones {
+            margin-top: 5%;
+            margin-bottom: 10%;
+            width: fit-content;
+        }
+}
+
+
+
+@media (max-width:320px) {
+
+    header img {
+        width: 70px;}
+    
+
+        nav ol {
+        font-size: 12px;}
+    
+        nav li a {
+        line-height: 15px;}
+    
+        .search {
+            padding: 5px;
+            border-radius: 10px;
+            margin:2px}
+
+        .slogan h1 {
+        margin-top: 50px;
+        font-size: 25px;}
+    
+        .slogan a {
+        font-size: 10px;
+        margin-left: 140px;}
+
+        .main-fotos img {
+        width: 70px;}
+    
+        .main-fotos{
+            width: auto;
+            margin-left: -290px;
+            margin-top: 150px;}
+
+
+        .banner img{
+        width: 70px}
+
+        .footer {
+            font-size: 12px;}
+
+        main {
+            margin-top: -10%;
+        }
+        .abcd {
+            font-size: 12px;
+        }
+
+        .productos img{
+            width: 150px;
+            margin-bottom: 10px;
+        }
+        .productos h1 {
+            font-size: 12px;}
+        
+        .productos p{
+                font-size: 10px;}  
+
+        .tragos img{
+            width: 150px;
+        }
+        .tragos h1{
+            font-size: 12px;
+        }
+        .tragos p{
+            font-size: 10px;
+        }
+        .tragos li{
+            font-size: 10px;
+            list-style: none;
+        }
+
+        .form-name {
+            width: 200px;
+            font-size: 12px;
+        }
+        .form-email {
+            width: 200px;
+            font-size: 12px;
+        
+        }
+        .form-comentario{
+            width: 250px;
+            height: 250px;
+            font-size: 12px;
+        }
+        
+        label {
+            font-size: 12px;}
+
+            ::placeholder {
+            font-size: 12px;}
+
+        .contactarnos {
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        .contactarnos img{
+            width: 25px;
+        }
+        .contactarnos a {
+            font-size: 12px;
+        }
+        .contactarnos h2 {
+            font-size: 12px;
+        text-align: center;}
+
+        .descripcion{
+            font-size: 12px;
+        }
+
+        iframe{
+            width: 200px;
+            height: 200px;
+            margin-left: 18%;}
+
+        .recomendaciones img {
+            width: 250px;
+        }
+
+        .recomendaciones {
+            padding-left: 10%;
+        }
+    }
+
