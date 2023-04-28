@@ -115,8 +115,8 @@ nav li a:hover{
 }
 
 main {
-    background-image: url(../Assets/background.png);
-    background-size:cover;
+    background-image: url(../assets/background.png);
+    background-size:cover;  
     width: auto;
     padding-top: 5%;
     margin-top: -48px;
