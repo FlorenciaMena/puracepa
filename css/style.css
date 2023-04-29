@@ -115,7 +115,7 @@ nav li a:hover{
 }
 
 main {
-    background-image: url(../assets/gintonic.jpg);
+    background-image: url(../assets/background.png);
     background-size:cover;  
     width: auto;
     padding-top: 5%;
