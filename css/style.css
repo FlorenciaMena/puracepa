@@ -115,7 +115,7 @@ nav li a:hover{
 }
 
 main {
-    background-image: url(../assets/background.png);
+    background-image: url(../assets/gintonic.jpg);
     background-size:cover;  
     width: auto;
     padding-top: 5%;
@@ -505,7 +505,7 @@ margin-bottom: 32px;
 width: fit-content;
 padding: 20px;
 border-radius: 20px;
-margin-left: 6%;
+margin-left: 3.5%;
 }
 .recomendaciones p {
     display: flex;
@@ -1020,6 +1020,10 @@ gap: auto;
         text-align: center;}
 
         .descripcion{
+            font-size: 12px;
+        }
+
+        .horarios-de-atencion li {
             font-size: 12px;
         }
 
