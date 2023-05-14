@@ -1,0 +1,96 @@
+main {
+    background-image: url(../assets/background.png);
+    background-size:cover;  
+    width: auto;
+    padding-top: 5%;
+    margin-top: -48px;
+    margin-bottom: 0%;
+    .mindex{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+}
+.slogan {
+    h1{
+    font-family:'Patrick Hand SC', cursive;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin:20px}
+    a  {
+        font-family:'Patrick Hand SC', cursive;
+        font-size: 30px;
+        background-color: #704564;
+        color: #fff;
+        width:fit-content;
+        border-radius: 10px;
+        margin-left: 300px;
+        text-decoration: none;
+    }
+}
+.main-fotos{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+    ". . . mf1"
+    ". . mf2 mf3"
+    ". mf4 mf5 mf6"
+    "mf7 mf8 mf9 mf10";
+    margin-left: -310px;
+    margin-top: -70px;
+    img {
+        margin: 10px;
+        gap: 5px;
+        border-radius: 50%;
+        box-shadow: 0 0 5px $colour1,
+        0 0 10px $colour1,
+        0 0 20px $colour1,
+        0 0 40px $colour3,
+        0 0 80px $colour3;
+    }
+}
+.mf1{
+    grid-area: mf1;
+}
+.mf2{
+    grid-area: mf2;
+}
+.mf3{
+    grid-area: mf3;
+}
+.mf4{
+    grid-area: mf4;
+}
+.mf5{
+    grid-area: mf5;
+}
+.mf6{
+    grid-area: mf6;
+}
+.mf7{
+    grid-area: mf7;
+}
+.mf8{
+    grid-area: mf8;
+}
+.mf9{
+    grid-area: mf9;
+}
+.mf10{
+    display: grid;
+    grid-area: mf10;
+}
+.banner {
+    background-color: $colour3transparent;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+    padding-top: 15px;
+    gap:5px;
+    margin-bottom: 28px;
+}
+.banner-item {
+    scroll-snap-align:center;
+    height: 200px;
+}

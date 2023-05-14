@@ -1,0 +1,42 @@
+.abcd {
+    @include flex (row, none, center, none);
+    list-style: none;
+    gap: 10px;
+    font-size: 25px;
+}
+
+.productos{
+    @include grid (400px auto, 100px auto);
+    margin: 20px;
+    margin-bottom: 30px;
+    img {
+        border-radius: 20px;
+        display: grid;
+        @include start-end (1, 1, 2, 3);
+        justify-self: center;
+        align-self: center;
+    }
+    h1 {
+        font-size: 35px;
+        padding: 10px 10px;
+        background-color: #704564b2;
+        width: fit-content;
+        height: fit-content;
+        display: grid;
+        @include start-end (2, 3, 1, 2);
+        justify-self: center;
+        align-self : center;
+        margin: 20px;
+        margin-left: 0px;
+        border-radius: 20px;
+    }
+    p{
+        font-size: 30px;
+        background-color: #704564b2;
+        width:fit-content;
+        @include start-end (2, 2, 2, 3);
+        text-align: justify;
+        border-radius: 20px;
+        padding:5px;
+    }
+}

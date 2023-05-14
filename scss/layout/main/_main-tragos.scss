@@ -1,0 +1,51 @@
+.tragos{
+    margin: 20px;
+    margin-bottom: 30px;
+    @include grid ( 400px auto, 100px auto auto);
+    img{
+        border-radius: 20PX;
+        display: grid;
+        @include start-end (1, 1, 2, 4);
+        justify-self: center;
+        align-self: center;
+    }
+    h1{
+        font-size: 35px;
+        padding: 10px 10px;
+        background-color: #704564b2;
+        width: fit-content;
+        height: fit-content;
+        display: grid;
+        @include start-end (2, 3, 1, 2);
+        justify-self: center;
+        align-self : center;
+        margin: 20px;
+        margin-left: 0px;
+        border-radius: 20px;
+    }
+    p{
+        font-size: 30px;
+        background-color: #704564b2;
+        width: fit-content;
+        height: fit-content;
+        border-radius: 20PX;
+        padding: 5px;
+        display: grid;
+        @include start-end (2, 3, 3, 4);
+        text-align: justify;
+    }
+    ul{
+        @include start-end (2, 3, 2, 3);
+        li{
+            font-size: 30px;
+            list-style:circle;
+            background-color: $colour3transparent;
+            width: auto;
+            height: fit-content;
+            border-radius: 20PX;
+            padding: 5px;
+            text-align: justify;
+        }
+    }
+}
+

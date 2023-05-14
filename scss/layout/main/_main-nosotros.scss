@@ -1,0 +1,91 @@
+.descripcion {
+    font-size: 25px;
+    background-color: $colour3transparent;
+    margin: 20px;
+    width: fit-content;
+    border-radius: 20px;
+    padding-left: 5px;
+    text-align: justify;
+}
+.main-nosotros{
+    margin: 20xp;
+    @include grid (repeat(2,1fr), 250px 230px);
+    grid-template-areas:
+    "mapa horario"
+    "mapa metodo";
+    .mapa {
+        margin-left: 20xp;
+        iframe{
+            display: grid;
+            grid-area: mapa;
+            width: 600px;
+            height: 450px;
+            border: 20px;
+            margin-left: 20px;
+        }
+    }
+}
+.horarios-de-atencion{
+    background-color: $colour3transparent;
+    margin: 20px;
+    border-radius: 20px;
+    grid-area: horario;
+    padding:5px;
+    width: fit-content;
+    height: fit-content;
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    h2{
+        font-size: 20px;
+        text-align: center;
+    }
+    ol {
+        li{
+            list-style: none;
+            width: fit-content;
+            font-size: 16px;
+            text-align: justify;
+        }
+    }
+    }
+
+.metodos-de-pago {
+        background-color: #704564b2;
+        margin:20px;
+        width: fit-content;
+        border-radius: 20px;
+        grid-area: metodo;
+        padding: 5px;
+        width: fit-content;
+        height: fit-content;
+        justify-self: center;
+        align-self: center;
+        h3{
+            font-size: 20px;
+            text-align: center;
+        }
+        p{
+            font-size: 16px;
+            text-align: justify;
+        }
+    }
+
+.recomendaciones {
+        font-size: 20px;
+        background-color: #704564b2;
+        margin-bottom: 32px;
+        width: fit-content;
+        padding: 20px;
+        border-radius: 20px;
+        margin-left: 3.5%;
+        p {
+            @include flex ( row, center, center, none);
+            text-align: center;
+        }
+        img{
+            height: 120px;
+            width: 300px;
+            gap: auto;
+            }
+        }
