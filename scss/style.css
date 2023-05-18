@@ -55,6 +55,12 @@ header img {
   width: 200px;
 }
 
+::-moz-placeholder {
+  font-family: "Patrick Hand SC", cursive;
+  color: #e3e3e3;
+  font-size: 16px;
+}
+
 ::placeholder {
   font-family: "Patrick Hand SC", cursive;
   color: #e3e3e3;
@@ -68,6 +74,7 @@ nav ol {
   list-style: none;
   padding: 0;
   border-radius: 20px;
+  width: -moz-fit-content;
   width: fit-content;
   display: flex;
   flex-direction: row;
@@ -147,6 +154,7 @@ main .mindex {
   font-size: 30px;
   background-color: #704564;
   color: #fff;
+  width: -moz-fit-content;
   width: fit-content;
   border-radius: 10px;
   margin-left: 300px;
@@ -168,7 +176,7 @@ main .mindex {
   box-shadow: 0 0 5px #642B54, 0 0 10px #642B54, 0 0 20px #642B54, 0 0 40px #704564, 0 0 80px #704564;
 }
 
-.mf1{
+.mf1 {
   grid-area: mf1;
 }
 
@@ -256,7 +264,9 @@ main .mindex {
   font-size: 35px;
   padding: 10px 10px;
   background-color: rgba(112, 69, 100, 0.6980392157);
+  width: -moz-fit-content;
   width: fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   display: grid;
   grid-column-start: 2;
@@ -272,6 +282,7 @@ main .mindex {
 .productos p {
   font-size: 30px;
   background-color: rgba(112, 69, 100, 0.6980392157);
+  width: -moz-fit-content;
   width: fit-content;
   grid-column-start: 2;
   grid-column-end: 2;
@@ -303,7 +314,9 @@ main .mindex {
   font-size: 35px;
   padding: 10px 10px;
   background-color: rgba(112, 69, 100, 0.6980392157);
+  width: -moz-fit-content;
   width: fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   display: grid;
   grid-column-start: 2;
@@ -319,7 +332,9 @@ main .mindex {
 .tragos p {
   font-size: 30px;
   background-color: rgba(112, 69, 100, 0.6980392157);
+  width: -moz-fit-content;
   width: fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   border-radius: 20PX;
   padding: 5px;
@@ -341,6 +356,7 @@ main .mindex {
   list-style: circle;
   background-color: rgba(112, 69, 100, 0.6980392157);
   width: auto;
+  height: -moz-fit-content;
   height: fit-content;
   border-radius: 20PX;
   padding: 5px;
@@ -376,6 +392,9 @@ main .mindex {
   width: 80px;
   font-size: 20px;
 }
+.form-contacto ::-moz-placeholder {
+  color: grey;
+}
 .form-contacto ::placeholder {
   color: grey;
 }
@@ -392,6 +411,7 @@ main .mindex {
   margin-bottom: 30px;
   margin-left: 20px;
   background-color: rgba(112, 69, 100, 0.6980392157);
+  width: -moz-fit-content;
   width: fit-content;
   border-radius: 20px;
   display: grid;
@@ -404,6 +424,7 @@ main .mindex {
 }
 .contactarnos .contactarnos a {
   font-size: 16px;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -411,6 +432,7 @@ main .mindex {
   font-size: 25px;
   background-color: rgba(112, 69, 100, 0.6980392157);
   margin: 20px;
+  width: -moz-fit-content;
   width: fit-content;
   border-radius: 20px;
   padding-left: 5px;
@@ -442,7 +464,9 @@ main .mindex {
   border-radius: 20px;
   grid-area: horario;
   padding: 5px;
+  width: -moz-fit-content;
   width: fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   display: grid;
   justify-self: center;
@@ -454,6 +478,7 @@ main .mindex {
 }
 .horarios-de-atencion ol li {
   list-style: none;
+  width: -moz-fit-content;
   width: fit-content;
   font-size: 16px;
   text-align: justify;
@@ -462,11 +487,13 @@ main .mindex {
 .metodos-de-pago {
   background-color: rgba(112, 69, 100, 0.6980392157);
   margin: 20px;
+  width: -moz-fit-content;
   width: fit-content;
   border-radius: 20px;
   grid-area: metodo;
   padding: 5px;
   width: fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   justify-self: center;
   align-self: center;
@@ -484,6 +511,7 @@ main .mindex {
   font-size: 20px;
   background-color: rgba(112, 69, 100, 0.6980392157);
   margin-bottom: 32px;
+  width: -moz-fit-content;
   width: fit-content;
   padding: 20px;
   border-radius: 20px;
@@ -617,6 +645,7 @@ footer .f3 {
 }
 @media (max-width: 425px) {
   header {
+    height: -moz-fit-content;
     height: fit-content;
   }
   header img {
@@ -691,6 +720,7 @@ footer .f3 {
   }
   .footer {
     font-size: 17px;
+    height: -moz-fit-content;
     height: fit-content;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -778,6 +808,9 @@ footer .f3 {
     width: 300px;
     font-size: 15px;
     padding-left: 20px;
+  }
+  .form-contacto form ::-moz-placeholder {
+    font-size: 15px;
   }
   .form-contacto form ::placeholder {
     font-size: 15px;
@@ -891,6 +924,7 @@ footer .f3 {
   .recomendaciones {
     margin-top: 5%;
     margin-bottom: 10%;
+    width: -moz-fit-content;
     width: fit-content;
   }
   .recomendaciones img {
@@ -966,6 +1000,9 @@ footer .f3 {
   .form-comentario label {
     font-size: 12px;
   }
+  .form-comentario ::-moz-placeholder {
+    font-size: 12px;
+  }
   .form-comentario ::placeholder {
     font-size: 12px;
   }
@@ -1010,6 +1047,4 @@ footer .f3 {
   .recomendaciones img {
     width: 250px;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

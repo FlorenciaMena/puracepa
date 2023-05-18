@@ -1,0 +1,62 @@
+@media (max-width:1024px) {
+    header img {
+        width: 100px;
+        margin-left: 15px;}
+    
+        nav {
+            ol{ font-size: 20px;
+                li{ a {
+                    line-height: 20px;
+                    padding-right: 20px;
+                    padding-left: 20px;}}}
+        }
+        
+        .slogan{
+            h1{
+        margin-top: 50px;
+        font-size: 40px;}
+            a {
+            font-size: 25px;
+            margin-left: 250px;}}
+    
+        .main-fotos{
+            margin-top: 50px;
+            margin-left: -550px;
+            img {
+                width: 150px;
+                margin: 10px;
+                gap: 5px;} }
+
+        .banner img{
+        width:150px}
+
+        .productos{ 
+            h1 {
+            font-size: 20px;}
+            p{
+                font-size: 18px;}  }
+        
+        .tragos {
+            h1{
+            font-size: 20px;
+        }
+        p{
+            font-size: 18px;
+        }
+        ul{li{
+            font-size: 18px;
+        }}}
+        
+        iframe{
+            display: grid;
+            grid-area: mapa;
+            width: 600px;
+            height: 450px;
+            border: 20px;}
+        
+        .recomendaciones{
+            margin-left: 0;
+            padding-left: 60px;
+        }
+
+}
