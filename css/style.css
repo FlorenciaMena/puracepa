@@ -168,7 +168,7 @@ main .mindex {
   box-shadow: 0 0 5px #642B54, 0 0 10px #642B54, 0 0 20px #642B54, 0 0 40px #704564, 0 0 80px #704564;
 }
 
-.mf1{
+.mf1 {
   grid-area: mf1;
 }
 
@@ -701,15 +701,15 @@ footer .f3 {
     grid-area: none;
     flex-wrap: nowrap;
   }
-  .footer .f1 a {
+  .f1 a {
     margin-top: 5px;
     margin-bottom: 5px;
   }
-  .footer .f2 a {
+  .f2 a {
     margin-top: 5px;
     margin-bottom: 5px;
   }
-  .footer .f3 a {
+  .f3 a {
     margin-top: 5px;
     margin-bottom: 5px;
   }
@@ -779,7 +779,7 @@ footer .f3 {
     font-size: 15px;
     padding-left: 20px;
   }
-  .form-contacto form ::placeholder {
+  input ::placeholder {
     font-size: 15px;
   }
   .form-name {
@@ -816,9 +816,7 @@ footer .f3 {
   .main-nosotros {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    grid-area: none;
+    align-content: center;
   }
   iframe {
     display: grid;
