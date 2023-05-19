@@ -605,7 +605,7 @@ footer .f3 {
     flex-direction: column;
     align-content: center;
   }
-  iframe {
+  .mapa iframe {
     display: flex;
     flex-direction: row;
     margin-left: 30%;
@@ -835,7 +835,7 @@ label {
   align-content: center;
 }
 
-iframe {
+.mapa iframe {
   display: grid;
   grid-area: mapa;
   width: 300px;
@@ -901,7 +901,7 @@ iframe {
   .horarios-de-atencion ol {
     font-size: 14px;
   }
-  iframe {
+  .mapa iframe {
     margin-left: 10%;
   }
   .recomendaciones {
@@ -1015,7 +1015,7 @@ iframe {
   .horarios-de-atencion li {
     font-size: 12px;
   }
-  iframe {
+  .mapa iframe {
     width: 200px;
     height: 200px;
     margin-left: 18%;

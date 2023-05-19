@@ -193,14 +193,14 @@
             align-content: center;
         }
 
-        iframe {
+        .mapa{ iframe {
             display: grid;
             grid-area: mapa;
             width: 300px;
             height: 300px;
             align-content: center;
             border: 10px;
-            margin-left: 15%;}
+            margin-left: 15%;}}
 
             .recomendaciones {
                 margin-top: 5%;
