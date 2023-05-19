@@ -75,8 +75,12 @@
                     height: fit-content;
                     padding-top: 10px;
                     padding-bottom: 10px;
-                    @include flex (column, center, center, none);
-                    flex-wrap: nowrap;}
+                    display:flex;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    justify-content: center;
+                    align-content: center;}}
+
             .f1{ a{
                     margin-top: 5px;
                     margin-bottom: 5px;
@@ -138,16 +142,7 @@
             } }
     }
 
-    .form-contacto {
-        margin-top: 10%;
-        form { label {
-            background-color: $colour3transparent;
-            width: 300px;
-            font-size: 15px;
-            padding-left: 20px;}}}
-
-        input ::placeholder {
-        font-size: 15px;}
+    .form-contacto {margin-top: 10%;}
 
     .form-name {
             width: 300px;
@@ -168,6 +163,15 @@
             width: 40px;
             font-size: 15px;
         }
+
+    label {
+        background-color: $colour3transparent ;
+        width: 300px;
+        font-size: 15px;
+        padding-left: 20px;}
+
+    ::placeholder {
+    font-size: 15px;}
 
         .contactarnos {
             margin-left: 5px;
@@ -206,4 +210,4 @@
                     width: 300px;
                 }
             }
-    }
+    

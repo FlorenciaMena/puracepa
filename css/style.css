@@ -600,20 +600,20 @@ footer .f3 {
   }
 }
 @media (max-width: 768px) {
-  .main-nosotros {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-  }
-  iframe {
-    display: flex;
-    flex-direction: row;
-    margin-left: 10%;
-  }
+    .main-nosotros {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+    }
+    iframe {
+      display: flex;
+      flex-direction: row;
+      margin-left: 10%;}
+
   .recomendaciones {
     margin-top: 5%;
     padding-left: 80px;
-  }
+    }
 }
 @media (max-width: 425px) {
   header {
