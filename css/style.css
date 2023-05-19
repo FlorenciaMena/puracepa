@@ -600,20 +600,20 @@ footer .f3 {
   }
 }
 @media (max-width: 768px) {
-    .main-nosotros {
-      display: flex;
-      flex-direction: column;
-      align-content: center;
-    }
-    iframe {
-      display: flex;
-      flex-direction: row;
-      margin-left: 10%;}
-
+  .main-nosotros {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  iframe {
+    display: flex;
+    flex-direction: row;
+    margin-left: 30%;
+  }
   .recomendaciones {
     margin-top: 5%;
     padding-left: 80px;
-    }
+  }
 }
 @media (max-width: 425px) {
   header {
@@ -696,146 +696,164 @@ footer .f3 {
     padding-bottom: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    grid-area: none;
     flex-wrap: nowrap;
-  }
-  .f1 a {
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-  .f2 a {
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-  .f3 a {
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-  main {
-    margin-top: -10%;
-  }
-  .abcd {
-    font-size: 15px;
-    gap: 5px;
-    margin-top: 10%;
-  }
-  .productos {
-    display: grid;
-    grid-template-columns: 0px;
-    grid-template-rows: 80px auto auto;
-    margin: 10px;
-    margin-bottom: 20px;
-  }
-  .productos img {
-    width: 200px;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    align-items: center;
-    margin: 5px;
-    margin-bottom: 10px;
-  }
-  .productos h1 {
-    font-size: 16px;
-  }
-  .productos p {
-    font-size: 15px;
-  }
-  .tragos {
-    display: grid;
-    grid-template-columns: 0px;
-    grid-template-rows: 80px auto auto auto;
-    margin: 10px;
-    margin-bottom: 20px;
-  }
-  .tragos img {
-    width: 200px;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    align-items: center;
-    margin: 5px;
-    margin-bottom: 10px;
-  }
-  .tragos h1 {
-    font-size: 16px;
-  }
-  .tragos p {
-    font-size: 15px;
-  }
-  .tragos ul li {
-    font-size: 15px;
-  }
-  .form-contacto {
-    margin-top: 10%;
-  }
-  .form-contacto form label {
-    background-color: rgba(112, 69, 100, 0.6980392157);
-    width: 300px;
-    font-size: 15px;
-    padding-left: 20px;
-  }
-  input ::placeholder {
-    font-size: 15px;
-  }
-  .form-name {
-    width: 300px;
-    font-size: 15px;
-  }
-  .form-email {
-    width: 300px;
-    font-size: 15px;
-  }
-  .form-comentario {
-    width: 400px;
-    height: 400px;
-    font-size: 15px;
-  }
-  .form-enviar {
-    margin-top: 10px;
-    width: 40px;
-    font-size: 15px;
-  }
-  .contactarnos {
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-  .contactarnos h2 {
-    font-size: 20px;
-    text-align: center;
-  }
-  .descripcion {
-    font-size: 18px;
-    margin-top: 10%;
-    padding: 5px;
-  }
-  .main-nosotros {
-    display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-content: center;
-  }
-  iframe {
-    display: grid;
-    grid-area: mapa;
-    width: 300px;
-    height: 300px;
-    align-content: center;
-    border: 10px;
-    margin-left: 15%;
-  }
-  .recomendaciones {
-    margin-top: 5%;
-    margin-bottom: 10%;
-    padding-left: 15%;
-  }
-  .recomendaciones img {
-    width: 300px;
   }
 }
+.f1 a {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.f2 a {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.f3 a {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+main {
+  margin-top: -10%;
+}
+
+.abcd {
+  font-size: 15px;
+  gap: 5px;
+  margin-top: 10%;
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: 0px;
+  grid-template-rows: 80px auto auto;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+.productos img {
+  width: 200px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  align-items: center;
+  margin: 5px;
+  margin-bottom: 10px;
+}
+.productos h1 {
+  font-size: 16px;
+}
+.productos p {
+  font-size: 15px;
+}
+
+.tragos {
+  display: grid;
+  grid-template-columns: 0px;
+  grid-template-rows: 80px auto auto auto;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+.tragos img {
+  width: 200px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  align-items: center;
+  margin: 5px;
+  margin-bottom: 10px;
+}
+.tragos h1 {
+  font-size: 16px;
+}
+.tragos p {
+  font-size: 15px;
+}
+.tragos ul li {
+  font-size: 15px;
+}
+
+.form-contacto {
+  margin-top: 10%;
+}
+
+.form-name {
+  width: 300px;
+  font-size: 15px;
+}
+
+.form-email {
+  width: 300px;
+  font-size: 15px;
+}
+
+.form-comentario {
+  width: 400px;
+  height: 400px;
+  font-size: 15px;
+}
+
+.form-enviar {
+  margin-top: 10px;
+  width: 40px;
+  font-size: 15px;
+}
+
+label {
+  background-color: rgba(112, 69, 100, 0.6980392157);
+  width: 300px;
+  font-size: 15px;
+  padding-left: 20px;
+}
+
+::placeholder {
+  font-size: 15px;
+}
+
+.contactarnos {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.contactarnos h2 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.descripcion {
+  font-size: 18px;
+  margin-top: 10%;
+  padding: 5px;
+}
+
+.main-nosotros {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+iframe {
+  display: grid;
+  grid-area: mapa;
+  width: 300px;
+  height: 300px;
+  align-content: center;
+  border: 10px;
+  margin-left: 15%;
+}
+
+.recomendaciones {
+  margin-top: 5%;
+  margin-bottom: 10%;
+  padding-left: 15%;
+}
+.recomendaciones img {
+  width: 300px;
+}
+
 @media (max-width: 375px) {
   header img {
     width: 80px;
